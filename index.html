@@ -126,7 +126,20 @@
         <pre><code>#更新命令
 install.packages(&quot;installr&quot;) 
 library(installr)
-updateR()</code></pre>
+updateR()
+R中对包进行操作的命令很多，涉及从包的安装、查询、更新、卸载等等。这里介绍几个常见的操作
+1、安装 install.packages()（括号内指定包的名字）
+        可以指定具体的安装路径和包的下载链接
+2、加载 library()或require() (括号内指定包的名字）
+3、包的查询
+        查询已安装的所有的包：library()
+        查询具体包的信息： help(package=&quot;pheatmap&quot;)
+        查询包的版本：packageVersion(&quot;pheatmap&quot;) 返回指定包的版本
+        查询所有包所在库的路径 ：.libPaths()
+4、更新包
+        update.packages() (括号内指定包的名字）
+5、卸载包
+        remove.packages()(括号内指定包的名字）</code></pre>
       
     </div>
     <footer class="article-footer">
