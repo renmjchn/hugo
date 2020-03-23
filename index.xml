@@ -6,10 +6,46 @@
     <description>Recent content on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2020 20:58:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 23:45:19 +0800</lastBuildDate>
     
 	<atom:link href="https://renmjchn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>图片爬虫</title>
+      <link>https://renmjchn.github.io/post/%E5%9B%BE%E7%89%87%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Mon, 23 Mar 2020 23:51:40 +0800</pubDate>
+      
+      <guid>https://renmjchn.github.io/post/%E5%9B%BE%E7%89%87%E7%88%AC%E8%99%AB/</guid>
+      <description>#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&amp;quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &amp;quot;html.parser&amp;quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; + i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =</description>
+    </item>
+    
+    <item>
+      <title>关于R语言</title>
+      <link>https://renmjchn.github.io/post/%E5%85%B3%E4%BA%8Er%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Mon, 23 Mar 2020 23:49:53 +0800</pubDate>
+      
+      <guid>https://renmjchn.github.io/post/%E5%85%B3%E4%BA%8Er%E8%AF%AD%E8%A8%80/</guid>
+      <description>#更新命令 install.packages(&amp;quot;installr&amp;quot;) library(installr) updateR() R中对包进行操作的命令很多，涉及从包的安装、查询、更新、卸载等等。这里介绍几个常见的操作 1、安装 install.packag</description>
+    </item>
+    
+    <item>
+      <title>关于资料检索</title>
+      <link>https://renmjchn.github.io/post/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%96%99%E6%A3%80%E7%B4%A2/</link>
+      <pubDate>Mon, 23 Mar 2020 23:49:02 +0800</pubDate>
+      
+      <guid>https://renmjchn.github.io/post/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%96%99%E6%A3%80%E7%B4%A2/</guid>
+      <description>我们在写作业或论文的时候，需要在网上查询资料。经过一番检索之后，发现最有参考价值的资料往往只有那么一俩篇，而且大多是发表的论文。这就告诉我们</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://renmjchn.github.io/about/</link>
+      <pubDate>Mon, 23 Mar 2020 23:45:19 +0800</pubDate>
+      
+      <guid>https://renmjchn.github.io/about/</guid>
+      <description>这是我用hugo搭建的一个个人博客，试试怎么样吧</description>
+    </item>
     
     <item>
       <title>My First Post</title>
