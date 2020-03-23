@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>图片爬虫 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="olOwOlo" /><meta name="description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&amp;quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &amp;quot;html.parser&amp;quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.1 with theme even" />
+
+
+<link rel="canonical" href="https://renmjchn.github.io/post/%E5%9B%BE%E7%89%87%E7%88%AC%E8%99%AB/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="图片爬虫" />
+<meta property="og:description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://renmjchn.github.io/post/%E5%9B%BE%E7%89%87%E7%88%AC%E8%99%AB/" />
+<meta property="article:published_time" content="2020-03-23T23:51:40+08:00" />
+<meta property="article:modified_time" content="2020-03-23T23:51:40+08:00" />
+<meta itemprop="name" content="图片爬虫">
+<meta itemprop="description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =">
+<meta itemprop="datePublished" content="2020-03-23T23:51:40&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-23T23:51:40&#43;08:00" />
+<meta itemprop="wordCount" content="434">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图片爬虫"/>
+<meta name="twitter:description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re ="/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">图片爬虫</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-03-23 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <pre><code>#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+import requests, os, time
+from tqdm import tqdm
+from bs4 import BeautifulSoup
+
+site = 'http://t66y.com/thread0806.php?fid=16'
+header = {&quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&quot;}
+
+titles = []
+links = []
+
+def get_info():
+    re = requests.get(site,headers=header)
+    re.encoding='gbk'
+    td = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all('td', class_='tal')
+    for i in td:
+        titles.append(i.h3.string)
+        links.append('http://t66y.com/' + i.a['href'])
+
+def download_img(title, link):
+    if not os.path.exists(title):
+        os.makedirs(title)
+    re = requests.get(link,headers=header)
+    re.encoding='gbk'
+    div = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all('div', class_='tpc_content do_not_catch')
+    if len(div) == 0:
+        print('*****匹配到空值*****')
+    else:
+        img = BeautifulSoup(str(div[0]), &quot;html.parser&quot;).find_all('img')
+        pbar = tqdm(total=len(img))
+        for i in img:
+            file_name = title + '/' + str(img.index(i)) + '.jpg'
+            if not os.path.exists(file_name):
+                download_link = i['data-src']
+                re = requests.get(download_link, headers=header)
+                with open(file_name, 'wb') as f:
+                    f.write(re.content)
+            pbar.update(1)
+            time.sleep(0.5)
+        pbar.close()
+
+
+get_info()
+print(titles)
+print(len(titles))
+for i in range(1, len(titles)):
+    print(i)
+    print(titles[i])
+    print('#' * 100)
+    print('正在下载第'+str(i)+'个帖子：'+titles[i])
+    download_img(titles[i], links[i])
+    print('#' * 100 + '\n\n\n')
+#    time.sleep(3)
+print('下载完成！')
+</code></pre>
+<p>目前经常出现的一个问题，已解决：</p>
+<pre><code>Traceback (most recent call last):
+  File &quot;D:/codes/python/spider_cl/dl_img_cl.py&quot;, line 50, in &lt;module&gt;
+    download_img(titles[i], links[i])
+  File &quot;D:/codes/python/spider_cl/dl_img_cl.py&quot;, line 24, in download_img
+    div = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all('div', class_='tpc_content do_not_catch')[0]
+IndexError: list index out of range
+#可能的原因：div = BeautifulSoup(re.text, &quot;html.parser&quot;).find_all('div', class_='tpc_content do_not_catch')[0]
+#find_all返回列表为空
+</code></pre>
+<p>另外一个问题，没有确定原因，重新运行程序有时候问题自动消失：</p>
+<pre><code>Traceback (most recent call last):
+  File &quot;D:/codes/python/image_spider_cl/dl_img_cl.py&quot;, line 52, in &lt;module&gt;
+    download_img(titles[i], links[i])
+  File &quot;D:/codes/python/image_spider_cl/dl_img_cl.py&quot;, line 36, in download_img
+    re = requests.get(download_link, headers=header)
+  File &quot;D:\python\lib\site-packages\requests\api.py&quot;, line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File &quot;D:\python\lib\site-packages\requests\api.py&quot;, line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File &quot;D:\python\lib\site-packages\requests\sessions.py&quot;, line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File &quot;D:\python\lib\site-packages\requests\sessions.py&quot;, line 643, in send
+    r = adapter.send(request, **kwargs)
+  File &quot;D:\python\lib\site-packages\requests\adapters.py&quot;, line 510, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='www.privacypic.com', port=443): Max retries exceeded with url: /images/2020/03/20/1F682A94-5E10-477E-A537-DCDC723385C6a056dc6af4669132.jpg (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+ 84%|████████▎ | 36/43 [02:26&lt;00:28,  4.06s/it]
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">olOwOlo</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-03-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E5%85%B3%E4%BA%8Er%E8%AF%AD%E8%A8%80/">
+            <span class="next-text nav-default">关于R语言</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://renmjchn.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">olOwOlo</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
