@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://renmjchn.github.io/sitemap.xml
