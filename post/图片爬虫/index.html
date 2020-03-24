@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>图片爬虫 - Even - A super concise theme for Hugo</title>
+  <title>图片爬虫 - My Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="olOwOlo" /><meta name="description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&amp;quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &amp;quot;html.parser&amp;quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="renmjchn" /><meta name="description" content="#!/usr/bin/python3 # -*- coding: utf-8 -*- import requests, os, time from tqdm import tqdm from bs4 import BeautifulSoup site = &#39;http://t66y.com/thread0806.php?fid=16&#39; header = {&amp;quot;User-Agent&amp;quot;: &amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36&amp;quot;} titles = [] links = [] def get_info(): re = requests.get(site,headers=header) re.encoding=&#39;gbk&#39; td = BeautifulSoup(re.text, &amp;quot;html.parser&amp;quot;).find_all(&#39;td&#39;, class_=&#39;tal&#39;) for i in td: titles.append(i.h3.string) links.append(&#39;http://t66y.com/&#39; &#43; i.a[&#39;href&#39;]) def download_img(title, link): if not os.path.exists(title): os.makedirs(title) re =" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -127,7 +127,7 @@
     </header>
 
     <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
+  <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents"></nav>
   </div>
@@ -223,11 +223,11 @@ requests.exceptions.ProxyError: HTTPSConnectionPool(host='www.privacypic.com', p
 
     <div class="post-copyright">
   <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span class="item-content">olOwOlo</span>
+    <span class="item-title">文章作者</span>
+    <span class="item-content">renmjchn</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">LastMod</span>
+    <span class="item-title">上次更新</span>
     <span class="item-content">
         2020-03-23
         
@@ -242,11 +242,11 @@ requests.exceptions.ProxyError: HTTPSConnectionPool(host='www.privacypic.com', p
         <a class="prev" href="/post/%E6%84%8F%E4%B9%89%E4%B8%8E%E5%BF%AB%E4%B9%90/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">意义与快乐</span>
-            <span class="prev-text nav-mobile">Prev</span>
+            <span class="prev-text nav-mobile">上一篇</span>
           </a>
         <a class="next" href="/post/%E5%85%B3%E4%BA%8Er%E8%AF%AD%E8%A8%80/">
             <span class="next-text nav-default">关于R语言</span>
-            <span class="next-text nav-mobile">Next</span>
+            <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
       </nav>
@@ -284,11 +284,11 @@ requests.exceptions.ProxyError: HTTPSConnectionPool(host='www.privacypic.com', p
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
@@ -296,12 +296,11 @@ requests.exceptions.ProxyError: HTTPSConnectionPool(host='www.privacypic.com', p
 
   <span class="copyright-year">
     &copy; 
-    2017 - 
     2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">olOwOlo</span>
+    <span class="author">renmjchn</span>
   </span>
 </div>
     </footer>

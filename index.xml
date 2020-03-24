@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Even - A super concise theme for Hugo</title>
+    <title>My Blog</title>
     <link>https://renmjchn.github.io/</link>
-    <description>Recent content on Even - A super concise theme for Hugo</description>
+    <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <lastBuildDate>Mon, 23 Mar 2020 23:45:19 +0800</lastBuildDate>
     
 	<atom:link href="https://renmjchn.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -57,21 +57,12 @@
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://renmjchn.github.io/post/my-first-post/</link>
+      <title>hugo搭建与配置</title>
+      <link>https://renmjchn.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 23 Mar 2020 20:58:41 +0800</pubDate>
       
-      <guid>https://renmjchn.github.io/post/my-first-post/</guid>
+      <guid>https://renmjchn.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
       <description>我的第一篇博客 终于搭建好了，真是废了不少麻烦 系统学习知识很重要，不然到处出问题 #文章发布过程 hugo cd public/ git status -s git add . git status -s git commit -m &amp;quot;改动第</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://renmjchn.github.io/post/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://renmjchn.github.io/post/%E6%B5%8B%E8%AF%95/</guid>
-      <description>测试一下</description>
     </item>
     
   </channel>

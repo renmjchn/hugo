@@ -51,14 +51,8 @@
   </url>
   
   <url>
-    <loc>https://renmjchn.github.io/post/my-first-post/</loc>
+    <loc>https://renmjchn.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2020-03-23T20:58:41+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://renmjchn.github.io/post/%E6%B5%8B%E8%AF%95/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
