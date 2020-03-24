@@ -56,5 +56,14 @@
       <description>我的第一篇博客 终于搭建好了，真是废了不少麻烦 系统学习知识很重要，不然到处出问题 #文章发布过程 hugo cd public/ git status -s git add . git status -s git commit -m &amp;quot;改动第</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://renmjchn.github.io/post/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://renmjchn.github.io/post/%E6%B5%8B%E8%AF%95/</guid>
+      <description>测试一下</description>
+    </item>
+    
   </channel>
 </rss>
